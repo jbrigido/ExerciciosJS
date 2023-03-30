@@ -43,4 +43,12 @@ function getInputValues() {
 
 
 /*------------------------------------------------------------------------------------------  
+Exercico botão para gerar número random de 1 a 10*/
+
+function randomNum() {
+    document.getElementById("num").innerHTML = Math.floor(Math.random() * 10) + 1;
+}
+
+
+/*------------------------------------------------------------------------------------------  
 */
