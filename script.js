@@ -51,4 +51,27 @@ function randomNum() {
 
 
 /*------------------------------------------------------------------------------------------  
+Exercicio Ligar e desligar lâmpada*/
+
+var on = document.getElementById("lampadaOn");
+var off = document.getElementById("lampadaOff");
+
+on.style.display = "none";
+on.style.cursor = "pointer";
+
+off.style.display = "block";
+off.style.display = "pointer";
+
+function desligar() {
+    on.style.display = "none";
+    off.style.display = "block";
+}
+
+function ligar() {
+    on.style.display = "block";
+    off.style.display = "none";
+}
+
+
+/*------------------------------------------------------------------------------------------  
 */
