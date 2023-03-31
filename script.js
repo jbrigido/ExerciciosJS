@@ -8,6 +8,7 @@ console.log(typeString, " ", typeNumber, " ", typeBoolean);
 
 
 /*------------------------------------------------------------------------------------------
+
 Exercicio mostrar data e hora num elemento HTML*/
 
 
@@ -26,6 +27,7 @@ document.getElementById('hora').innerHTML = time;
 
 
 /*------------------------------------------------------------------------------------------
+
 Exercicio Formulário para atribuir valores ao objeto Pessoa*/
 
 var nomeInput = document.getElementById('nome');
@@ -43,6 +45,7 @@ function getInputValues() {
 
 
 /*------------------------------------------------------------------------------------------  
+
 Exercico botão para gerar número random de 1 a 10*/
 
 function randomNum() {
@@ -51,6 +54,7 @@ function randomNum() {
 
 
 /*------------------------------------------------------------------------------------------  
+
 Exercicio Ligar e desligar lâmpada*/
 
 var on = document.getElementById("lampadaOn");
@@ -74,4 +78,44 @@ function ligar() {
 
 
 /*------------------------------------------------------------------------------------------  
-*/
+
+Exercicio calculadora*/
+
+var num1 = document.getElementById('num1'), num2 = document.getElementById('num2'), 
+soma = document.getElementById('soma'), sub = document.getElementById('sub'), 
+multi = document.getElementById('multi'), div = document.getElementById('dividir')
+result = document.getElementById('result');
+
+var op = 0;
+
+function somar() {
+
+    var valor1 = num1.value, valor2 = num2.value;
+    op = (parseFloat(valor1)+parseFloat(valor2));
+    return result.innerHTML = "Resultado: " + op;
+
+}
+
+function subtrair() {
+
+    var valor1 = num1.value, valor2 = num2.value;
+    op = (parseFloat(valor1) - parseFloat(valor2));
+    return result.innerHTML = "Resultado: " + op;
+
+}
+
+function multiplicar() {
+
+    var valor1 = num1.value, valor2 = num2.value;
+    op = (parseFloat(valor1) * parseFloat(valor2));
+    return result.innerHTML = "Resultado: " + op;
+
+}
+
+function dividir() {
+
+    var valor1 = num1.value, valor2 = num2.value;
+    op = (parseFloat(valor1) / parseFloat(valor2));
+    return result.innerHTML = "Resultado: " + op;
+
+}
