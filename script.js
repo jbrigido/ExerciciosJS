@@ -60,7 +60,7 @@ on.style.display = "none";
 on.style.cursor = "pointer";
 
 off.style.display = "block";
-off.style.display = "pointer";
+off.style.cursor = "pointer";
 
 function desligar() {
     on.style.display = "none";
