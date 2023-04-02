@@ -119,3 +119,67 @@ function dividir() {
     return result.innerHTML = "Resultado: " + op;
 
 }
+
+
+/*------------------------------------------------------------------------------------------  
+
+Exercicio mostrar mês por extenso*/
+
+var inputDate = '';
+var inputMonth = '';
+var show = document.getElementById('showMonth');
+
+function getData() {
+    inputDate = new Date (document.getElementById('inputData').value);
+    inputMonth = inputDate.getMonth();
+    
+    switch (inputMonth) {
+        case 0:
+            show.innerHTML = "Janeiro";
+            break;
+        
+        case 1:
+            show.innerHTML = "Fevereiro";
+            break;
+        
+        case 2:
+            show.innerHTML = "Março";
+            break;
+        
+        case 3:
+            show.innerHTML = "Abril";
+            break;
+        
+        case 4:
+            show.innerHTML = "Maio";
+            break;
+        
+        case 5:
+            show.innerHTML = "Junho";
+            break;
+        
+        case 6:
+            show.innerHTML = "Julho";
+            break;
+        
+        case 7:
+            show.innerHTML = "Agosto";
+            break;
+        
+        case 8:
+            show.innerHTML = "Setembro";
+            break;
+        
+        case 9:
+            show.innerHTML = "Outubro";
+            break;
+        
+        case 10:
+            show.innerHTML = "Novembro";
+            break;
+        
+        case 11:
+            show.innerHTML = "Dezembro";
+            break;
+    }
+}
