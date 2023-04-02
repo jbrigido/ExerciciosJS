@@ -183,3 +183,19 @@ function getData() {
             break;
     }
 }
+
+
+/*------------------------------------------------------------------------------------------  
+
+Exercicio contador numeros pares entre 0 e 100*/
+
+counter = 0;
+
+for (var i = 0; i < 101; i++) {
+
+    if (i%2 == 0) {
+        counter ++;
+    }
+}
+
+console.log(counter + ' números pares entre 0 e 100');
