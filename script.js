@@ -199,3 +199,21 @@ for (var i = 0; i < 101; i++) {
 }
 
 console.log(counter + ' números pares entre 0 e 100');
+
+
+/*------------------------------------------------------------------------------------------  
+
+Exercicio utilizar o método reverse string*/
+
+var string = "";
+var showReverseString = document.getElementById('reverseString');
+
+function reverseWord() {
+    string = document.getElementById('inputString').value;
+
+    var splitString = string.split("");
+    var reverseArray = splitString.reverse();
+    var joinArray = reverseArray.join("");
+    
+    return showReverseString.innerHTML = joinArray;
+}
